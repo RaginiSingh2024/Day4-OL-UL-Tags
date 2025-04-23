@@ -2,164 +2,184 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>OL & UL Practice</title>
+  <title>Div Styling Practice</title>
   <style>
-    ul.a { list-style-type: circle; }
-    ul.b { list-style-type: square; }
-    ol.c { list-style-type: upper-roman; }
-    ol.d { list-style-type: lower-alpha; }
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background: #f0f0f5;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
   </style>
 </head>
 <body>
 
-  <h2>🔹 Practice 1: Basic Unordered List</h2>
-  <ul style="list-style-type: circle;">
-    <li>Apples</li>
-    <li>Bananas</li>
-    <li>Grapes</li>
-  </ul>
+  <h1>🧱 DIV Styling Practice</h1>
 
-  <h2>🔹 Practice 2: Basic Ordered List</h2>
-  <ol type="I">
-    <li>Wake up</li>
-    <li>Brush teeth</li>
-    <li>Eat breakfast</li>
-  </ol>
+  <section>
+    <h2>1. Basic Box</h2>
+    <div style="background-color: lightblue; padding: 20px;">Hello, I am a box!</div>
+  </section>
 
-  <h2>🔹 Practice 3: Ordered List with start="10"</h2>
-  <ol start="10">
-    <li>Tenth</li>
-    <li>Eleventh</li>
-    <li>Twelfth</li>
-  </ol>
+  <section>
+    <h2>2. Two Boxes Side by Side</h2>
+    <div style="display: flex; gap: 10px;">
+      <div style="background: salmon; width: 30%; padding: 10px;">Left</div>
+      <div style="background: lightgreen; width: 70%; padding: 10px;">Right</div>
+    </div>
+  </section>
 
-  <h2>🔹 Practice 4: Nested Unordered List</h2>
-  <ul>
-    <li>Fruits
-      <ul>
-        <li>Apple</li>
-        <li>Mango
-          <ul>
-            <li>Alphonso</li>
-            <li>Langra</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>Vegetables</li>
-  </ul>
+  <section>
+    <h2>3. Center a Div</h2>
+    <div style="width: 200px; margin: 0 auto; background: #ddd; text-align: center;">I’m centered!</div>
+  </section>
 
-  <h2>🔹 Practice 5: Mixed OL & UL</h2>
-  <ol>
-    <li>Shopping List
-      <ul>
-        <li>Milk</li>
-        <li>Bread</li>
-      </ul>
-    </li>
-    <li>Exercise</li>
-  </ol>
+  <section>
+    <h2>4. Header & Footer</h2>
+    <div style="background: navy; color: white; padding: 10px;">Header</div>
+    <div style="padding: 20px;">Main Content Here</div>
+    <div style="background: gray; color: white; padding: 10px;">Footer</div>
+  </section>
 
-  <h2>🔹 Practice 6: Styled UL with Square Bullets</h2>
-  <ul style="list-style-type: none;">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-  </ul>
+  <section>
+    <h2>5. Nested Divs</h2>
+    <div style="background: lightgray; padding: 20px; border: 1px solid #aaa;">
+      Outer Div
+      <div style="background: white; padding: 10px; margin-top: 10px; border: 1px solid #aaa;">
+        Inner Div
+      </div>
+    </div>
+  </section>
 
-  <h2>🔹 Practice 7: Reverse Ordered List</h2>
-  <ol reversed start="10">
-    <li>Tenth</li>
-    <li>Ninth</li>
-    <li>Eighth</li>
-  </ol>
+  <section>
+    <h2>6. Div as Button</h2>
+    <div style="display: inline-block; background: orange; padding: 10px 20px; color: white; cursor: pointer;">
+      Click Me
+    </div>
+  </section>
 
-  <h2>🔹P ractice 8: Styled OL with Alphabetical Labels</h2>
-  <ol type="a">
-    <li>Plan</li>
-    <li>Design</li>
-    <li>Develop</li>
-    <li>Deploy</li>
-  </ol>
+  <section>
+    <h2>7. Responsive Box</h2>
+    <div style="width: 100%; max-width: 500px; background: #f9f9f9; padding: 20px; margin: auto;">
+      This box adjusts its size!
+    </div>
+  </section>
 
-  <h2>🔹 Practice 9: Horizontal UL (Menu Style)</h2>
-  <ul style="list-style: none; display: flex; gap: 20px;">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+  <section>
+    <h2>8. Flexbox Layout</h2>
+    <div style="display: flex; justify-content: space-around;">
+      <div style="background: pink; padding: 20px;">Box 1</div>
+      <div style="background: lightblue; padding: 20px;">Box 2</div>
+      <div style="background: lightyellow; padding: 20px;">Box 3</div>
+    </div>
+  </section>
 
-  <h2>🔹 Practice 10: Checklist with Emojis</h2>
-  <ul style="list-style: none;">
-    <li> Buy groceries</li>
-    <li> Finish homework</li>
-    <li> Clean room</li>
-  </ul>
+  <section>
+    <h2>9. Border & Shadow</h2>
+    <div style="border: 2px solid #333; padding: 20px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
+      Stylish Box
+    </div>
+  </section>
 
-  <h2>🔹 Practice 11: Multi-column UL</h2>
-  <ul style="columns: 3; -webkit-columns: 3; -moz-columns: 3;">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-    <li>Python</li>
-    <li>Java</li>
-    <li>C++</li>
-  </ul>
+  <section>
+    <h2>10. Image Card</h2>
+    <div style="border: 1px solid #ccc; padding: 15px; width: 250px;">
+      <img src="https://via.placeholder.com/200" style="width: 100%;">
+      <h3>Card Title</h3>
+      <p>This is a simple card using a div.</p>
+    </div>
+  </section>
 
-  <h2>🔹Practice 12: Timeline Style OL</h2>
-  <ol style="list-style-position: inside; padding-left: 0;">
-    <li>2000 - Born</li>
-    <li>2018 - Graduated High School</li>
-    <li>2022 - Finished College</li>
-  </ol>
+  <section>
+    <h2>11. Gradient Background</h2>
+    <div style="padding: 30px; background: linear-gradient(to right, #ff7e5f, #feb47b); color: white;">
+      Beautiful Gradient Background
+    </div>
+  </section>
 
-  <h2>🔹 Practice 13: Styled UL as Tags</h2>
-  <ul style="list-style: none; display: flex; gap: 10px;">
-    <li style="background: #d1e7dd; padding: 5px 10px; border-radius: 5px;">HTML</li>
-    <li style="background: #f8d7da; padding: 5px 10px; border-radius: 5px;">CSS</li>
-    <li style="background: #cff4fc; padding: 5px 10px; border-radius: 5px;">JavaScript</li>
-  </ul>
+  <section>
+    <h2>12. Hover Effect</h2>
+    <div style="width: 200px; height: 100px; background: skyblue; transition: 0.3s;"
+         onmouseover="this.style.transform='scale(1.1)'; this.style.background='steelblue';"
+         onmouseout="this.style.transform='scale(1)'; this.style.background='skyblue';">
+      Hover over me!
+    </div>
+  </section>
 
-  <h2>🔹 Practice 14: Numbered Steps with Icons</h2>
-  <ol>
-    <li> Research</li>
-    <li> Write</li>
-    <li> Test</li>
-    <li> Launch</li>
-  </ol>
+  <section>
+    <h2>13. Sticky Note</h2>
+    <div style="background: #ffff88; padding: 20px; width: 200px; font-family: cursive; box-shadow: 5px 5px 10px #ccc; transform: rotate(-2deg);">
+      Don’t forget to code today!
+    </div>
+  </section>
 
-  
-  <style>
-    ul.custom-bullets {
-      list-style: none;
-      padding-left: 0;
-    }
-  
-    ul.custom-bullets li {
-      background-image: url('https://media.istockphoto.com/id/911026578/photo/walking-to-class.jpg?s=612x612&w=0&k=20&c=0zYehlzABctgFBr_QFjkqqfNcU4Gmf-lj92bXrhQ2IY=');
-      background-size: 30px 20px; /* size of bullet */
-      background-repeat: no-repeat;
-      background-position: 0 5px; /* adjust vertical alignment */
-      padding-left: 30px; /* space for the image */
-      margin-bottom: 10px;
-    }
-  </style>
-  
-  <h2>🔹 Practice 15: UL with Custom Bullet Images</h2>
-  <ul class="custom-bullets">
-            <li>News</li>
-            <li>Blog</li>
-            <li>Tutorials</li>
-  </ul>
-  
+  <section>
+    <h2>14. Glassmorphism</h2>
+    <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); padding: 20px; border-radius: 10px; color: white; border: 1px solid rgba(255, 255, 255, 0.3); width: 300px;">
+      Glass-like div effect!
+    </div>
+  </section>
 
-  <h2> 🔹 Practice 16: OL for Quiz Answers</h2>
-  <ol type="A">
-    <li>Paris</li>
-    <li>London</li>
-    <li>Berlin</li>
-    <li>Madrid</li>
-  </ol>
+  <section>
+    <h2>15. Collapsible Div</h2>
+    <div onclick="document.getElementById('hidden').style.display='block'" style="cursor: pointer; background: coral; padding: 10px; color: white;">
+      Click to show more...
+    </div>
+    <div id="hidden" style="display: none; padding: 10px; background: lightcoral;">
+      🎉 Surprise! Here's some hidden content.
+    </div>
+  </section>
+
+  <section>
+    <h2>16. Responsive Grid</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px;">
+      <div style="background: lavender; padding: 20px;">1</div>
+      <div style="background: lavender; padding: 20px;">2</div>
+      <div style="background: lavender; padding: 20px;">3</div>
+      <div style="background: lavender; padding: 20px;">4</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>17. Color Palette</h2>
+    <div style="display: flex; gap: 5px;">
+      <div style="width: 50px; height: 50px; background: #ff6b6b;"></div>
+      <div style="width: 50px; height: 50px; background: #feca57;"></div>
+      <div style="width: 50px; height: 50px; background: #1dd1a1;"></div>
+      <div style="width: 50px; height: 50px; background: #54a0ff;"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>18. Badge/Label</h2>
+    <div style="display: inline-block; background: crimson; color: white; padding: 5px 10px; border-radius: 50px;">
+      New!
+    </div>
+  </section>
+
+  <section>
+    <h2>19. Notification Card</h2>
+    <div style="max-width: 300px; padding: 15px; background: #fff3cd; border: 1px solid #ffeeba; border-radius: 10px;">
+      <strong>⚠️ Alert:</strong> You have 2 unread messages.
+    </div>
+  </section>
+
+  <section>
+    <h2>20. Chat Bubble</h2>
+    <div style="max-width: 250px; background: #e0f7fa; padding: 10px 15px; border-radius: 20px; margin: 10px 0;">
+      Hello! This is a chat message.
+    </div>
+  </section>
 
 </body>
 </html>
