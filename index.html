@@ -1,91 +1,165 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ordered and Unordered List Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>OL & UL Practice</title>
+  <style>
+    ul.a { list-style-type: circle; }
+    ul.b { list-style-type: square; }
+    ol.c { list-style-type: upper-roman; }
+    ol.d { list-style-type: lower-alpha; }
+  </style>
 </head>
 <body>
 
-    <div class="section">
-        <h1>Hello Everyone,This is a HTML page!!</h1>
-        <h2>Unordered List (Default - Disc)</h2>  
-        <ul>
-            <li>Ragini Singh</li>
-            <li>Raj Koli</li>
-            <li>Sejal Singh</li>
-            <li>Riddhi Zunjarrao</li>
-            <li>Shrishti Singh</li>
-            <li>Rajveer Singh</li>
-        </ul>
-    </div>
+  <h2>🔹 Practice 1: Basic Unordered List</h2>
+  <ul style="list-style-type: circle;">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Grapes</li>
+  </ul>
 
-    <div class="section">
-        <h2>Unordered List (Circle)</h2>  
-        <ul style="list-style-type: circle;">
-            <li>Coffee</li>
-            <li>Coca Cola</li>
-            <li>Tea</li>
-        </ul>
-    </div>
+  <h2>🔹 Practice 2: Basic Ordered List</h2>
+  <ol type="I">
+    <li>Wake up</li>
+    <li>Brush teeth</li>
+    <li>Eat breakfast</li>
+  </ol>
 
-    <div class="section">
-        <h2>Unordered List (Square)</h2>  
-        <ul style="list-style-type: square;">
-            <li>Pizza</li>
-            <li>Burger</li>
-            <li>Chocolate Cake</li>
-        </ul>
-    </div>
+  <h2>🔹 Practice 3: Ordered List with start="10"</h2>
+  <ol start="10">
+    <li>Tenth</li>
+    <li>Eleventh</li>
+    <li>Twelfth</li>
+  </ol>
 
-    <div class="section">
-        <h2>Ordered List (Decimal)</h2>  
-        <ol type="1">
-            <li>023</li>
-            <li>034</li>
-            <li>022</li>
-            <li>034</li>
-            <li>081</li>
-            <li>021</li>
-            <li>002</li>
-        </ol>
-    </div>
+  <h2>🔹 Practice 4: Nested Unordered List</h2>
+  <ul>
+    <li>Fruits
+      <ul>
+        <li>Apple</li>
+        <li>Mango
+          <ul>
+            <li>Alphonso</li>
+            <li>Langra</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Vegetables</li>
+  </ul>
 
-    <div class="section">
-        <h2>Ordered List (Upper Roman)</h2>  
-        <ol type="I">
-            <li>Physics</li>
-            <li>Chemistry</li>
-            <li>Mathematics</li>
-        </ol>
-    </div>
+  <h2>🔹 Practice 5: Mixed OL & UL</h2>
+  <ol>
+    <li>Shopping List
+      <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+      </ul>
+    </li>
+    <li>Exercise</li>
+  </ol>
 
-    <div class="section">
-        <h2>Ordered List (Lower Alpha)</h2>  
-        <ol type="a">
-            <li>Red</li>
-            <li>Yellow</li>
-            <li>Black</li>
-        </ol>
-    </div>
+  <h2>🔹 Practice 6: Styled UL with Square Bullets</h2>
+  <ul style="list-style-type: none;">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
 
-    <div class="section">
-        <h2>Ordered List (Upper Alpha)</h2>  
-        <ol type="A">
-            <li>Cow</li>
-            <li>Cat</li>
-            <li>Rabbit</li>
-        </ol>
-    </div>
+  <h2>🔹 Practice 7: Reverse Ordered List</h2>
+  <ol reversed start="10">
+    <li>Tenth</li>
+    <li>Ninth</li>
+    <li>Eighth</li>
+  </ol>
+
+  <h2>🔹P ractice 8: Styled OL with Alphabetical Labels</h2>
+  <ol type="a">
+    <li>Plan</li>
+    <li>Design</li>
+    <li>Develop</li>
+    <li>Deploy</li>
+  </ol>
+
+  <h2>🔹 Practice 9: Horizontal UL (Menu Style)</h2>
+  <ul style="list-style: none; display: flex; gap: 20px;">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <h2>🔹 Practice 10: Checklist with Emojis</h2>
+  <ul style="list-style: none;">
+    <li> Buy groceries</li>
+    <li> Finish homework</li>
+    <li> Clean room</li>
+  </ul>
+
+  <h2>🔹 Practice 11: Multi-column UL</h2>
+  <ul style="columns: 3; -webkit-columns: 3; -moz-columns: 3;">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>Python</li>
+    <li>Java</li>
+    <li>C++</li>
+  </ul>
+
+  <h2>🔹Practice 12: Timeline Style OL</h2>
+  <ol style="list-style-position: inside; padding-left: 0;">
+    <li>2000 - Born</li>
+    <li>2018 - Graduated High School</li>
+    <li>2022 - Finished College</li>
+  </ol>
+
+  <h2>🔹 Practice 13: Styled UL as Tags</h2>
+  <ul style="list-style: none; display: flex; gap: 10px;">
+    <li style="background: #d1e7dd; padding: 5px 10px; border-radius: 5px;">HTML</li>
+    <li style="background: #f8d7da; padding: 5px 10px; border-radius: 5px;">CSS</li>
+    <li style="background: #cff4fc; padding: 5px 10px; border-radius: 5px;">JavaScript</li>
+  </ul>
+
+  <h2>🔹 Practice 14: Numbered Steps with Icons</h2>
+  <ol>
+    <li> Research</li>
+    <li> Write</li>
+    <li> Test</li>
+    <li> Launch</li>
+  </ol>
+
+  
+  <style>
+    ul.custom-bullets {
+      list-style: none;
+      padding-left: 0;
+    }
+  
+    ul.custom-bullets li {
+      background-image: url('https://media.istockphoto.com/id/911026578/photo/walking-to-class.jpg?s=612x612&w=0&k=20&c=0zYehlzABctgFBr_QFjkqqfNcU4Gmf-lj92bXrhQ2IY=');
+      background-size: 30px 20px; /* size of bullet */
+      background-repeat: no-repeat;
+      background-position: 0 5px; /* adjust vertical alignment */
+      padding-left: 30px; /* space for the image */
+      margin-bottom: 10px;
+    }
+  </style>
+  
+  <h2>🔹 Practice 15: UL with Custom Bullet Images</h2>
+  <ul class="custom-bullets">
+            <li>News</li>
+            <li>Blog</li>
+            <li>Tutorials</li>
+  </ul>
+  
+
+  <h2> 🔹 Practice 16: OL for Quiz Answers</h2>
+  <ol type="A">
+    <li>Paris</li>
+    <li>London</li>
+    <li>Berlin</li>
+    <li>Madrid</li>
+  </ol>
 
 </body>
 </html>
-
